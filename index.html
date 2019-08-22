@@ -1,0 +1,49 @@
+#Resizing window using javascript
+
+
+
+//Create a function
+
+
+<script>
+
+var winOpen;
+
+
+//first function
+
+
+    function firstWindow() {
+
+     var winOpen = window.open("","", "width=200,height=200");
+}
+
+//second function to resize
+
+   function resizeWindow(){
+            
+      winOpen.resizeTo(400, 600);
+      winOpen.focus();
+}
+
+</script>
+
+
+
+
+//button to open the window
+
+
+<button type="button" onclick="firstWindow()">Open the window</button>
+
+
+//button to open the resized window
+
+
+<button type="button" onclick="resizeWindow()">Open resized window</button>
+
+
+
+
+
+//done
